@@ -1,0 +1,11 @@
+<h1>Search Results for "<%= @query %>"</h1>
+
+<%= render 'search_form' %>
+
+<ol>
+  <% @results.each do |result| %>
+    <li>
+      <a href="/movies?id=<%= result["imdbID"] %>"><%= result["Title"] %></a>
+    </li>
+  <% end %>
+</ol>

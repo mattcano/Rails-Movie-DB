@@ -1,0 +1,14 @@
+<h1>Movie Data: <%= @movie.title %></h1>
+
+<%= render 'search_form' %>
+<p>
+<img src="<%= @movie.poster %>" title="Movie poster for <%= @movie.title %>" alt="Movie poster for <%= @movie.title %>">
+<p><%= @movie.plot %></p>
+<p>Year: <%= @movie.year %></p>
+<p>Rating: <%= @movie.rating %></p>
+<p>Genres: <%= @movie.genres %></p>
+<p>Directors: <%= @movie.directors %></p>
+<p>Actors: <%= @movie.actors %></p>
+<p>IMDB Rating: <%= @movie.imdb_rating %></p>
+<p>Tomato Rating: <%= @movie.tomato_rating %></p>
+<p>Tomato Consensus: <%= @movie.tomato_consensus %></p>

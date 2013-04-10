@@ -2748,3 +2748,126 @@ Served asset /my_style.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-10 00:42:26 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/search?movie_title=Matrix" for 127.0.0.1 at 2013-04-10 11:19:07 -0700
+Processing by MovieController#search as HTML
+  Parameters: {"movie_title"=>"Matrix"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/models/search.rb:10:in `search'
+  app/controllers/movie_controller.rb:13:in `search'
+
+
+  Rendered /Users/Matt/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/Matt/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/Matt/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Processing by MovieController#home as HTML
+  Rendered movie/_search_form.html.erb (0.5ms)
+  Rendered movie/home.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 202ms (Views: 201.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/movie.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /movie.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /movie.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/my_style.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:18 -0700
+Served asset /my_style.css - 304 Not Modified (2ms)
+
+
+Started GET "/search?query=Matrix&button=search" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Processing by MovieController#search as HTML
+  Parameters: {"query"=>"Matrix", "button"=>"search"}
+  Rendered movie/_search_form.html.erb (0.0ms)
+  Rendered movie/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 570ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Served asset /movie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_style.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Served asset /my_style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Served asset /movie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:24 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?id=tt0133093" for 127.0.0.1 at 2013-04-10 11:19:27 -0700
+Processing by MovieController#movies as HTML
+  Parameters: {"id"=>"tt0133093"}
+  Rendered movie/_search_form.html.erb (0.1ms)
+  Rendered movie/movies.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 150ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /movie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_style.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /my_style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movie.css?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /movie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-10 11:19:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)

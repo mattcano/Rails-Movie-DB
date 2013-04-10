@@ -6,7 +6,7 @@ class Movie
 
   def initialize(id)
     @id = id
-    file = open("http://www.omdbapi.com/?i=#{URI.escape(@id)}&tomatoes=true")
+    file = open("http://www.omdbapi.com/?i=#{URI.escape(@id)}&tomatoes=true&plot=full")
     @result = JSON.load(file.read)
     @title = @result["Title"]
     @year = @result["Year"]
@@ -21,5 +21,5 @@ class Movie
     @tomato_consensus = @result["tomatoConsensus"]
   end
 
-
 end
+    
